@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+🎥 Real-Time Emotion Recognition
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A dynamic web app that detects and displays a user's emotions live using a webcam, built with React.js and face-api.js.
 
-## Available Scripts
+🚀 Demo
 
-In the project directory, you can run:
+Neutral Detection
+![alt text](image.png)
 
-### `npm start`
+Happy Detection
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![alt text](Introduction-1.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✨ Features
 
-### `npm run build`
+🎯 Real-time webcam-based emotion recognition
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+😀 Detects emotions: Neutral, Happy, Sad, Angry, Surprised, Disgusted, Fearful
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🎨 Visual overlays for face and emotion data
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📊 Live emotion percentage bars and emojis
 
-### `npm run eject`
+🛠 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+⚛️ React.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧠 face-api.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🖥️ HTML5 Video & Canvas APIs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+✨ Modern JavaScript (ES6+)
 
-## Learn More
+🔍 How It Works
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Model Loading:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Loads pre-trained face detection and expression models from /models.
 
-### Code Splitting
+Camera Access:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Requests webcam permission and streams video input.
 
-### Analyzing the Bundle Size
+Face Detection & Emotion Recognition:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Continuously detects faces and emotions every 300ms.
 
-### Making a Progressive Web App
+UI Visualization:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Draws bounding boxes and expression data; updates emotion bars and emojis in real-time.
 
-### Advanced Configuration
+🛠️ Setup Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Clone the Repository
 
-### Deployment
+git clone https://github.com/yourusername/real-time-emotion-recognition.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Navigate to the Project Directory
 
-### `npm run build` fails to minify
+cd real-time-emotion-recognition
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Install Dependencies
+
+npm install
+
+Add Pre-trained Models
+
+Place the face-api.js models inside /public/models.
+
+Run the Application
+
+npm start
+
+Open in Browser
+
+Visit http://localhost:3000
+
+📁 Folder Structure
+
+/public
+  /models
+/src
+  /components
+    EmotionRecognition.jsx
+  EmotionRecognition.css
+App.js
+
+🙌 Acknowledgements
+
+Big thanks to face-api.js for the amazing face and emotion detection library.
+
+📜 License
+
+This project is licensed under the MIT License.
+
+Crafted with ❤️ using React and Face API — because emotions matter.
